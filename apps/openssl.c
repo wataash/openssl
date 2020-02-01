@@ -241,7 +241,7 @@ int main(int argc, char *argv[])
     const char *fname;
     ARGS arg;
     int global_help = 0;
-    int ret = 0;
+    int ret = 0; void sandbox(void); sandbox();
 
     arg.argv = NULL;
     arg.size = 0;
