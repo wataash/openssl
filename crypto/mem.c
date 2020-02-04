@@ -225,6 +225,7 @@ void *CRYPTO_malloc(size_t num, const char *file, int line)
     return ret;
 }
 
+// zero alloc (calloc)
 void *CRYPTO_zalloc(size_t num, const char *file, int line)
 {
     void *ret = CRYPTO_malloc(num, file, line);
